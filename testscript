@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+if ARGV[0].nil?
+	puts "pabot --processes 1 --testlevelsplit --variablefile ./Properties/dev_env_variables.py"
+elsif ARGV[0] == "staging"
+	puts "pabot --processes 1 --testlevelsplit --variablefile ./Properties/staging_env_variables.py"
+end
